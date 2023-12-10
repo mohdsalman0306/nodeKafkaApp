@@ -1,19 +1,19 @@
-Prerequisite
+**Prerequisite**
 
-Knowledge
-    Node.JS Intermediate level
-    Experience with designing distributed systems
-Tools
-    Node.js: Download Node.JS
-    Docker: Download Docker
-    VsCode: Download VSCode
+**Knowledge**
+    1. Node.JS Intermediate level
+    2. Experience with designing distributed systems
+**Tools**
+    1. Node.js
+    2. Docker
+    3. VsCode
 
-Commands
-    Start Zookeper Container and expose PORT 2181.
+**Commands**
+    1. Start the Zookeeper Container and expose PORT 2181.
 
     docker run -p 2181:2181 zookeeper
 
-    Start Kafka Container, expose PORT 9092 and setup ENV variables.
+    2. Start Kafka Container, expose PORT 9092, and set up ENV variables.
 
     docker run -p 9092:9092 \
     -e KAFKA_ZOOKEEPER_CONNECT=<PRIVATE_IP>:2181 \
